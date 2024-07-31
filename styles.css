@@ -1,0 +1,82 @@
+/* Reset some default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    flex: 1 0 25%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #f1f1f1;
+}
+
+.btn.operator {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+.btn.operator:hover {
+    background-color: #f4a20d;
+}
+
+.btn.equal {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.btn.equal:hover {
+    background-color: #45a049;
+}
+
+.btn.zero {
+    flex: 1 0 50%;
+}
+
+.btn.decimal {
+    flex:  0 25%;
+}
